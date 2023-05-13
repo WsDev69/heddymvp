@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="achievementsVM" type="com.heddymvp.app.modules.achievements.data.viewmodel.AchievementsVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAchievements"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <TextView android:ellipsize="end" android:id="@+id/txtHeddy"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{achievementsVM.achievementsModel.txtHeddy}"
+            style="@style/txtFredokasemibold30" tools:text="@string/lbl_heddy"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtAchievements"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{achievementsVM.achievementsModel.txtAchievements}"
+            style="@style/txtIntersemibold35" tools:text="@string/lbl_achievements"/>
+        <ImageView android:id="@+id/imageGroup626349"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_375pxh"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_375pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group626349"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group626349"/>
+        <ImageView android:id="@+id/imageSearch"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_64pxh"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_199pxv"
+            android:layout_width="@dimen/_246pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_search_64x246"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_search_64x246"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgroupRowModel" type="com.heddymvp.app.modules.courseselection.data.model.ListgroupRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowchevronright"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        style="@style/groupStyleblue_A400cornerRadius">
+
+        <ImageView
+            android:id="@+id/imageGroup"
+            android:layout_width="@dimen/_41pxh"
+            android:layout_height="@dimen/_59pxh"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_11pxh"
+            android:layout_marginBottom="@dimen/_11pxh"
+            android:layout_weight="0"
+            android:src="@drawable/img_group"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_group" />
+
+        <LinearLayout
+            android:id="@+id/linearRowgroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frameStackacne"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginBottom="@dimen/_10pxv">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnacne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAcne"
+                        style="@style/txtIntersemibold17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{listgroupRowModel.txtAcne}"
+                        tools:text="@string/lbl_acne" />
+
+                    <View
+                        android:id="@+id/lineLineEleven"
+                        android:layout_width="@dimen/_80pxh"
+                        android:layout_height="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:background="@color/gray_300" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageLineNine"
+                    android:layout_width="@dimen/_32pxh"
+                    android:layout_height="@dimen/_4pxh"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_line9"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_line9" />
+            </FrameLayout>
+            <ImageView android:id="@+id/imageChevronRight"
+                android:layout_height="@dimen/_13pxh"
+                android:layout_marginBottom="@dimen/_36pxv"
+                android:layout_marginEnd="@dimen/_33pxh"
+                android:layout_marginStart="@dimen/_136pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="@dimen/_13pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_chevronright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_chevronright"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

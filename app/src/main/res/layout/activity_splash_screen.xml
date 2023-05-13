@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.heddymvp.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_A400">
+        <ImageView android:id="@+id/imageHeddyThree"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_284pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_94pxv"
+            android:layout_width="@dimen/_241pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_heddy3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_heddy3"/>
+        <TextView android:ellipsize="end" android:gravity="end"
+            android:id="@+id/txtHeddy"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:layout_marginStart="@dimen/_59pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{splashScreenVM.splashScreenModel.txtHeddy}"
+            style="@style/txtFredokasemibold80" tools:text="@string/lbl_heddy"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingVM" type="com.heddymvp.app.modules.onboarding.data.viewmodel.OnboardingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_A400">
+        <LinearLayout android:id="@+id/linearOnboarding"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblue_A400">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_6pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLetsgettokno"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_427pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{onboardingVM.onboardingModel.txtLetsgettokno}"
+                style="@style/txtRobotoromanmedium24" tools:text="@string/msg_lets_get_to_kno"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:text="@{onboardingVM.onboardingModel.txtTime}"
+                style="@style/txtRobotoromanregular15_1" tools:text="@string/msg_complete_the_2"/>
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_62pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_146pxv"
+                android:layout_width="@dimen/_62pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            <ImageView android:id="@+id/imageImageEleven"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_33pxh"
+                android:layout_marginEnd="@dimen/_101pxh"
+                android:layout_marginStart="@dimen/_101pxh"
+                android:layout_marginTop="@dimen/_887pxv"
+                android:layout_width="@dimen/_41pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image11"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image11"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="hormonesOneVM" type="com.heddymvp.app.modules.hormonesone.data.viewmodel.HormonesOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAcneOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImageFive"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_image5}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image5"/>
+        <LinearLayout android:id="@+id/linearColumnheddy"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_21pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtHeddy"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{hormonesOneVM.hormonesOneModel.txtHeddy}"
+                style="@style/txtFredokasemibold30" tools:text="@string/lbl_heddy"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnlanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_32pxh"
+                android:layout_marginStart="@dimen/_32pxh"
+                android:layout_marginTop="@dimen/_125pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_101">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_246pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_38pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{hormonesOneVM.hormonesOneModel.txtLanguage}"
+                    style="@style/txtRobotoromanmedium16_1" tools:text="@string/msg_video_on_what_i"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_62pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_152pxv"
+                android:layout_width="@dimen/_62pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright_blue_a400_62x62"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_blue_a400_62x62"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.heddymvp.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.heddymvp.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.heddymvp.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.heddymvp.app.modules.acnethree.ui.AcneThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.acneseven.ui.AcneSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.acnefour.ui.AcneFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.onboardingsurveyone.ui.OnboardingSurveyOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.homescreenacneleveltwo.ui.HomeScreenAcneLevelTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.hormonesone.ui.HormonesOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.acnesix.ui.AcneSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.achievements.ui.AchievementsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.homescreeninterests.ui.HomeScreenInterestsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.acnefive.ui.AcneFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.onboarding.ui.OnboardingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.courseselection.ui.CourseSelectionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.heddymvp.app.modules.acnetwo.ui.AcneTwoActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
