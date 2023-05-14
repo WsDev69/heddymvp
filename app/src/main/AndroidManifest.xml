@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/heddy_logo"
         android:label="@string/app_name" android:largeHeap="true"
         android:name="com.heddymvp.app.appcomponents.di.MyApp"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -45,5 +45,8 @@
             android:name="com.heddymvp.app.modules.courseselection.ui.CourseSelectionActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.heddymvp.app.modules.acnetwo.ui.AcneTwoActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.heddymvp.app.modules.video.ui.VideoScreenActivity" android:screenOrientation="portrait"/>
     </application>
 </manifest>

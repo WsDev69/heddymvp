@@ -272,17 +272,20 @@
                 android:layout_marginEnd="@dimen/_98pxh"
                 android:layout_marginStart="@dimen/_98pxh"
                 android:layout_width="@dimen/_59pxh" style="@style/groupStyleblue_1">
-                <ImageView android:id="@+id/imageImageThirteen"
+
+                <ImageView
+                    android:id="@+id/imageImageThirteen"
+                    android:layout_width="@dimen/_41pxh"
+                    android:layout_height="25dp"
                     android:layout_gravity="center"
-                    android:layout_height="@dimen/_33pxh"
-                    android:layout_marginBottom="@dimen/_10pxv"
-                    android:layout_marginEnd="@dimen/_9pxh"
                     android:layout_marginStart="@dimen/_9pxh"
                     android:layout_marginTop="@dimen/_11pxv"
-                    android:layout_width="@dimen/_41pxh"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_image11"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_image11"/>
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_image11" />
             </FrameLayout>
             <ImageView android:id="@+id/imageSearch"
                 android:layout_gravity="bottom|center"

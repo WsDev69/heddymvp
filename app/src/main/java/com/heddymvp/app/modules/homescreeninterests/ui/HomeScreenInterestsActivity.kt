@@ -7,8 +7,9 @@ import androidx.activity.viewModels
 import com.heddymvp.app.R
 import com.heddymvp.app.appcomponents.base.BaseActivity
 import com.heddymvp.app.databinding.ActivityHomeScreenInterestsBinding
+
 import com.heddymvp.app.modules.homescreeninterests.`data`.viewmodel.HomeScreenInterestsVM
-import com.heddymvp.app.modules.onboardingsurveyone.ui.OnboardingSurveyOneActivity
+import com.heddymvp.app.modules.video.ui.VideoScreenActivity
 import kotlin.String
 import kotlin.Unit
 
@@ -19,12 +20,35 @@ class HomeScreenInterestsActivity :
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
     binding.homeScreenInterestsVM = viewModel
+
+
+    val sharedPreference =  getSharedPreferences("FINISHED_1ST",Context.MODE_PRIVATE)
+    val is1stFinished = sharedPreference.getBoolean("finished", false)
+
+    if (is1stFinished) {
+      binding.imageImageThirteen.setImageResource(R.drawable.img_image8)
+      binding.viewWhiteButton.setBackgroundResource(R.drawable.img_image11)
+    }
+
   }
 
   override fun setUpClicks(): Unit {
     binding.imageArrowleft.setOnClickListener {
       finish()
     }
+
+    binding.imageImageThirteen.setOnClickListener {
+      val destIntent = VideoScreenActivity.getIntent(this, null)
+      startActivity(destIntent)
+    }
+
+    binding.viewWhiteButton.setOnClickListener {
+      val intent =  VideoScreenActivity.getIntent(this, null)
+      intent.putExtra("quiz", 2)
+
+      startActivity(intent)
+    }
+
 
   }
 

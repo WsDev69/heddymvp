@@ -64,6 +64,7 @@
                 android:paddingStart="@dimen/_30pxh"
                 android:paddingTop="@dimen/_22pxv"
                 android:singleLine="true"
+                android:textSize="@dimen/_19sp"
                 android:text="@string/msg_yes_take_me_th"
                 android:textAllCaps="false"
                 style="@style/btnSolidRounded_2" tools:text="@string/msg_yes_take_me_th"/>
